@@ -59,4 +59,8 @@ npm run lint
 npm run fmt
 ```
 
+## Tips & Tricks
+
+ * Due to how ESM works, module imports from a relative path require a `.js` postfix.
+
 [^1]: While ideally we could use `ts-node-dev`, it [does not currently work](https://github.com/wclr/ts-node-dev/issues/212#issuecomment-761418434) with ESM modules.
