@@ -8,8 +8,8 @@
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
     "check": "tsc --noEmit",
-    "dev": "nodemon src/entry.ts",
-    "dev:debug": "nodemon --inspect=127.0.0.1:9229 src/entry.ts",
+    "dev": "nodemon src/main.ts",
+    "dev:debug": "nodemon --inspect=127.0.0.1:9229 src/main.ts",
     "fmt": "prettier --write .",
     "lint": "eslint src",
     "start": "node ./dist/entry.js",
