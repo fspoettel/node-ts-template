@@ -4,12 +4,12 @@ Template for developing [Node.js](https://nodejs.org) projects with [TypeScript]
 
 Features:
 
- * support for [ESM modules](https://nodejs.org/api/esm.html) and top-level await.
- * [eslint](https://eslint.org) for linting.
- * [jest](https://jestjs.io/) for testing.
- * [prettier](https://prettier.io) for code formatting.
- * [github actions](https://docs.github.com/en/actions) for continuous integration.
- * [nodemon](https://github.com/remy/nodemon) + [ts-node](https://github.com/TypeStrong/ts-node) for development. [^1]
+- support for [ESM modules](https://nodejs.org/api/esm.html) and top-level await.
+- [eslint](https://eslint.org) for linting.
+- [jest](https://jestjs.io/) for testing.
+- [prettier](https://prettier.io) for code formatting.
+- [github actions](https://docs.github.com/en/actions) for continuous integration.
+- [nodemon](https://github.com/remy/nodemon) + [ts-node](https://github.com/TypeStrong/ts-node) for development. [^1]
 
 ## Install
 
@@ -61,6 +61,6 @@ npm run fmt
 
 ## Tips & Tricks
 
- * Due to how ESM works, module imports from a relative path require a `.js` postfix.
+- Due to how ESM works, module imports from a relative path require a `.js` postfix.
 
 [^1]: While ideally we could use `ts-node-dev`, it [does not currently work](https://github.com/wclr/ts-node-dev/issues/212#issuecomment-761418434) with ESM modules.
