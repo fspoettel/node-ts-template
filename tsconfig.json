@@ -5,8 +5,9 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "outDir": "dist",
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["esnext"],
+    "lib": ["es2022"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "noEmitOnError": true,
@@ -14,8 +15,11 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
-    "target": "esnext",
-    "useDefineForClassFields": true
+    "target": "es2022",
+    "useDefineForClassFields": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "jest_env.ts"]
 }
