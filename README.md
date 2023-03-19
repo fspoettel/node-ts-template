@@ -5,6 +5,7 @@ Template for developing [Node.js](https://nodejs.org) projects with [TypeScript]
 Features:
 
 - support for [ESM modules](https://nodejs.org/api/esm.html) and top-level await.
+- [swc](https://swc.rs/) for faster reloads, tests and builds.
 - [eslint](https://eslint.org) for linting.
 - [jest](https://jestjs.io/) for testing.
 - [prettier](https://prettier.io) for code formatting.
