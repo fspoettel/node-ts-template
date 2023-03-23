@@ -6,6 +6,6 @@ module.exports = {
   transform: {
     "^.+\\.(t|j)s$": "@swc/jest",
   },
-  setupFiles: ["./src/jest.env.ts"],
+  setupFiles: ["./jest.env.ts"],
   testEnvironment: "node",
 };

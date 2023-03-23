@@ -3,23 +3,25 @@
     "swc": true
   },
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "outDir": "dist",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "lib": ["es2022"],
-    "module": "nodenext",
+    "module": "es2022",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "nodenext",
+    "allowUnusedLabels": false,
+    "outDir": "dist",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
+    "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
-    "target": "es2022",
-    "useDefineForClassFields": true,
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*", "jest_env.ts"]
+  "include": ["src/**/*", "jest.env.ts"]
 }
