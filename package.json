@@ -6,7 +6,8 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "swc src -d dist",
+    "build": "npm run clean && swc src -d dist",
+    "clean": "rm -rf dist",
     "check": "tsc --noEmit",
     "dev": "nodemon src/main.ts",
     "dev:debug": "nodemon --inspect=127.0.0.1:9229 src/main.ts",
