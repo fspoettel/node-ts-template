@@ -4,7 +4,7 @@ Template for developing [Node.js](https://nodejs.org) projects with [TypeScript]
 
 Features:
 
-- support for [ESM modules](https://nodejs.org/api/esm.html) and top-level await.
+- support for [ESM modules](https://nodejs.org/api/esm.html) and top-level `await`.
 - [swc](https://swc.rs/) for faster reloads, tests and builds.
 - [eslint](https://eslint.org) for linting.
 - [jest](https://jestjs.io/) for testing.
@@ -27,11 +27,20 @@ npm run dev
 npm run dev:debug
 ```
 
+## Check types
+
+```
+npm run check
+```
+
 ## Build
 
 ```
 npm run build
 ```
+
+> **Note**  
+> `swc` does not check for type errors when building. If you want type checks during build, run `npm run check` in conjunction.
 
 ## Run built code
 
