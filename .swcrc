@@ -1,9 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/swcrc",
-  "exclude": [
-    ".*.spec.ts",
-    ".*.test.ts"
-  ],
+  "exclude": [".*.spec.ts", ".*.test.ts"],
   "jsc": {
     "baseUrl": ".",
     "parser": {
