@@ -11,6 +11,7 @@ Features:
 - [prettier](https://prettier.io) for code formatting.
 - [github actions](https://docs.github.com/en/actions) for continuous integration.
 - [nodemon](https://github.com/remy/nodemon) + [ts-node](https://github.com/TypeStrong/ts-node) for development. [^1]
+- pre-configured [Dockerfile](https://docker.com)
 
 ## Install
 
@@ -69,7 +70,18 @@ npm run lint
 npm run fmt
 ```
 
-## Tips & Tricks
+## Docker
+
+The included `Dockerfile` uses a multi-stage build to reduce the size of the final container. Build dependencies are pruned, and code is executed as non-root user.
+
+To run the container, use:
+
+```
+docker build -t node-ts-template .
+docker run -p 3000:3000 node-ts-template
+```
+
+## Caveats
 
 - Due to how ESM works, module imports from a relative path require a `.js` postfix.
 

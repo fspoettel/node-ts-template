@@ -1,0 +1,15 @@
+.github
+.vscode
+
+node_modules
+
+.editorconfig
+
+.env*
+
+.eslint*
+.prettier*
+
+jest*
+
+nodemon.json
