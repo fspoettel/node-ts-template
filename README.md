@@ -1,6 +1,6 @@
 # node-ts-template
 
-Template for developing [Node.js](https://nodejs.org) projects with [TypeScript](https://www.typescriptlang.org). Supports Node.js 16+.
+Template for developing [Node.js](https://nodejs.org) projects with [TypeScript](https://www.typescriptlang.org).
 
 Features:
 
