@@ -1,8 +1,7 @@
-// workaround until @swc/cli `--ignore` works, see https://github.com/swc-project/cli/issues/20
-
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require("fs");
 
+// workaround until @swc/cli `--ignore` works, see https://github.com/swc-project/cli/issues/20
 const swcConfig = JSON.parse(fs.readFileSync(`${__dirname}/.swcrc`));
 
 module.exports = {

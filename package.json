@@ -9,7 +9,7 @@
     "build": "npm run clean && swc src -d dist",
     "clean": "rm -rf dist",
     "check": "tsc --noEmit",
-    "dev": "nodemon src/main.ts",
+    "dev": "nodemon src/main.ts | pino-pretty",
     "dev:debug": "nodemon --inspect=127.0.0.1:9229 src/main.ts",
     "fmt": "prettier --write .",
     "lint": "eslint src",
@@ -29,11 +29,13 @@
     "eslint": "8.42.0",
     "jest": "29.5.0",
     "nodemon": "2.0.22",
+    "pino-pretty": "^10.0.0",
     "prettier": "2.8.8",
     "ts-node": "10.9.1",
     "typescript": "5.0.4"
   },
   "dependencies": {
-    "dotenv": "16.1.4"
+    "dotenv": "16.1.4",
+    "pino": "^8.14.1"
   }
 }

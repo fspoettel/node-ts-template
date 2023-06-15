@@ -72,7 +72,7 @@ npm run fmt
 
 ## Docker
 
-The included `Dockerfile` uses a multi-stage build to reduce the size of the final container. Build dependencies are pruned, and code is executed as non-root user.
+The included `Dockerfile` uses a multi-stage build to reduce the size of the final container. Build dependencies are pruned. Code is executed as non-root user.
 
 To run the container, use:
 
