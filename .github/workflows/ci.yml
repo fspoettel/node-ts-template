@@ -37,4 +37,7 @@ jobs:
           node-version-file: "package.json"
           cache: "npm"
       - run: npm ci
-      - run: npm run test
+      - run: npm run test:coverage
+      - uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
