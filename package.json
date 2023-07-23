@@ -24,7 +24,7 @@
     "@typescript-eslint/eslint-plugin": "6.1.0",
     "@typescript-eslint/parser": "6.1.0",
     "eslint": "8.45.0",
-    "pino-pretty": "10.0.0",
+    "pino-pretty": "10.1.0",
     "prettier": "3.0.0",
     "tsx": "3.12.7",
     "typescript": "5.1.6"
