@@ -10,15 +10,15 @@
     "build": "npm run clean && swc src -d dist",
     "clean": "rm -rf dist",
     "check": "tsc --noEmit",
-    "dev": "tsx watch --clear-screen=false ./src/main.ts | pino-pretty",
-    "dev:debug": "tsx watch --inspect --clear-screen=false ./src/main.ts | pino-pretty",
+    "dev": "node --watch --no-warnings --loader=tsx ./src/main.ts | pino-pretty",
+    "dev:debug": "node --watch --no-warnings --loader=tsx --inspect ./src/main.ts | pino-pretty",
     "fmt": "prettier --write .",
     "lint": "eslint src",
     "prepare": "husky install",
     "start": "node ./dist/main.js",
-    "test": "glob -c \"NODE_ENV=test tsx --test\" \"./src/**/*.test.ts\"",
-    "test:coverage": "glob -c \"NODE_ENV=test c8 --reporter=lcov tsx --test\" \"./src/**/*.test.ts\"",
-    "test:watch": "glob -c \"NODE_ENV=test tsx --test --watch\" \"./src/**/*.test.ts\""
+    "test": "glob -c \"NODE_ENV=test node --test --no-warnings --loader=tsx\" \"./src/**/*.test.ts\"",
+    "test:coverage": "glob -c \"NODE_ENV=test c8 --reporter=lcov node --test --no-warnings --loader=tsx\" \"./src/**/*.test.ts\"",
+    "test:watch": "glob -c \"NODE_ENV=test node --test --watch --no-warnings --loader=tsx\" \"./src/**/*.test.ts\""
   },
   "devDependencies": {
     "@swc/cli": "0.1.62",
