@@ -4,7 +4,11 @@
 
 export function ensureEnv(key: string): string {
   const val = process.env[key];
-  if (!val) throw new TypeError(`process.env is missing required key: ${key}`);
+
+  if (!val) {
+    throw new TypeError(`process.env is missing required key: ${key}`);
+  }
+
   return val;
 }
 
