@@ -5,11 +5,12 @@ Template for developing [Node.js](https://nodejs.org) projects with [TypeScript]
 Features:
 
 - support for [ESM modules](https://nodejs.org/api/esm.html) and top-level `await`.
-- [node:test](https://nodejs.org/api/test.html) for testing.
 - [tsx](https://github.com/esbuild-kit/tsx) for development.
 - [swc](https://swc.rs/) for faster builds and `tsconfig.paths` support.
 - [eslint](https://eslint.org) for linting.
-- [prettier](https://prettier.io) for code formatting.
+- [prettier](https://prettier.io/) + [lint-staged](https://github.com/okonet/lint-staged) hook for code formatting.
+- [node:test](https://nodejs.org/api/test.html) for testing.
+- [c8](https://github.com/bcoe/c8) for coverage.
 - [github actions](https://docs.github.com/en/actions) for continuous integration.
 - pre-configured [Dockerfile](https://docker.com).
 
@@ -56,6 +57,9 @@ npm run test
 
 # run in watch mode.
 npm run test:watch
+
+# generate coverage report.
+npm run test:coverage
 ```
 
 ## Lint

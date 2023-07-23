@@ -2,6 +2,7 @@
   "name": "node-typescript-starter",
   "version": "0.0.0",
   "type": "module",
+  "private": true,
   "engines": {
     "node": "^20"
   },
@@ -13,8 +14,10 @@
     "dev:debug": "tsx watch --inspect --clear-screen=false ./src/main.ts | pino-pretty",
     "fmt": "prettier --write .",
     "lint": "eslint src",
+    "prepare": "husky install",
     "start": "node ./dist/main.js",
     "test": "glob -c \"NODE_ENV=test tsx --test\" \"./src/**/*.test.ts\"",
+    "test:coverage": "glob -c \"NODE_ENV=test c8 --reporter=lcov tsx --test\" \"./src/**/*.test.ts\"",
     "test:watch": "glob -c \"NODE_ENV=test tsx --test --watch\" \"./src/**/*.test.ts\""
   },
   "devDependencies": {
@@ -23,8 +26,11 @@
     "@types/node": "20.4.4",
     "@typescript-eslint/eslint-plugin": "6.1.0",
     "@typescript-eslint/parser": "6.1.0",
+    "c8": "8.0.0",
     "eslint": "8.45.0",
     "glob": "10.3.3",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.3",
     "pino-pretty": "10.1.0",
     "prettier": "3.0.0",
     "tsx": "3.12.7",
