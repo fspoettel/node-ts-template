@@ -1,9 +1,9 @@
 import { pino } from "pino";
-import { APP_ID, LOG_LEVEL } from "./config.js";
 
-const logger = pino({
-  name: APP_ID,
-  level: LOG_LEVEL,
-});
+function createLogger(name: string, level: string) {
+  return pino({ name, level });
+}
 
-export default logger;
+export type Logger = pino.Logger;
+
+export default createLogger;
