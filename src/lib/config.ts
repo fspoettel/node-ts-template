@@ -1,7 +1,6 @@
 /**
  * Checks that an env variable is non-empty, errors otherwise.
  */
-
 export function ensureEnv(key: string): string {
   const val = process.env[key];
 
@@ -14,10 +13,10 @@ export function ensureEnv(key: string): string {
 
 function createConfig() {
   return {
-    /** application identifier. used e.g. by the logger. */
+    /** application identifier. used e.g. to scope the logger. */
     APP_ID: "com.qms-slack-bot",
-    /** minimum log level. */
-    LOG_LEVEL: process.env["LOG_LEVEL"] || "info",
+    /** (optional) minimum log level. defaults to `info`. */
+    LOG_LEVEL: process.env["LOG_LEVEL"] ?? "info",
   };
 }
 

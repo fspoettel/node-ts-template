@@ -1,7 +1,15 @@
-import { pino } from "pino";
+import { DestinationStream, LoggerOptions, pino } from "pino";
 
-function createLogger(name: string, level: string) {
-  return pino({ name, level });
+/**
+ * Creates an instance of `pino.Logger`.
+ */
+function createLogger(
+  options: LoggerOptions & { name: string; level: string; },
+  destinationStream?: DestinationStream
+) {
+  return destinationStream
+    ? pino(options, destinationStream)
+    : pino(options);
 }
 
 export type Logger = pino.Logger;

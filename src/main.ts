@@ -5,7 +5,11 @@ import createLogger from "@/lib/logger.js";
 import createConfig from "@/lib/config.js";
 
 const config = createConfig();
-const logger = createLogger(config.APP_ID, config.LOG_LEVEL);
+
+const logger = createLogger({
+  name: config.APP_ID,
+  level: config.LOG_LEVEL
+});
 
 // compiles to ESM, so top-level await works.
 export async function main() {
