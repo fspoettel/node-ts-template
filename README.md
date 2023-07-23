@@ -6,7 +6,7 @@ Features:
 
 - support for [ESM modules](https://nodejs.org/api/esm.html) and top-level `await`.
 - [node:test](https://nodejs.org/api/test.html) for testing.
-- [tsx](https://github.com/remy/nodemon) for development.
+- [tsx](https://github.com/esbuild-kit/tsx) for development.
 - [swc](https://swc.rs/) for faster builds and `tsconfig.paths` support.
 - [eslint](https://eslint.org) for linting.
 - [prettier](https://prettier.io) for code formatting.
@@ -54,7 +54,7 @@ npm run start
 ```
 npm run test
 
-# run jest in watch mode.
+# run in watch mode.
 npm run test:watch
 ```
 
