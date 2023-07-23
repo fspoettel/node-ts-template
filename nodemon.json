@@ -1,8 +1,0 @@
-{
-  "restartable": "rs",
-  "ignore": [".git", "dist", "node_modules"],
-  "execMap": {
-    "ts": "node --no-warnings --loader ts-node/esm"
-  },
-  "ext": "ts"
-}

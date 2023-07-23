@@ -1,7 +1,4 @@
 {
-  "ts-node": {
-    "swc": true
-  },
   "compilerOptions": {
     "lib": ["es2022"],
     "module": "es2022",
@@ -19,6 +16,7 @@
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
+    // this has to be mirrored in .swcrc
     "paths": {
       "@/*": ["./src/*"]
     }
