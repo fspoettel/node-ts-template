@@ -14,8 +14,8 @@
     "fmt": "prettier --write .",
     "lint": "eslint src",
     "start": "node ./dist/main.js",
-    "test": "NODE_ENV=test tsx --test **/*.test.ts",
-    "test:watch": "NODE_ENV=test tsx --watch --test **/*.test.ts"
+    "test": "glob -c \"NODE_ENV=test tsx --test\" \"./src/**/*.test.ts\"",
+    "test:watch": "glob -c \"NODE_ENV=test tsx --test --watch\" \"./src/**/*.test.ts\""
   },
   "devDependencies": {
     "@swc/cli": "0.1.62",
@@ -24,6 +24,7 @@
     "@typescript-eslint/eslint-plugin": "6.1.0",
     "@typescript-eslint/parser": "6.1.0",
     "eslint": "8.45.0",
+    "glob": "10.3.3",
     "pino-pretty": "10.1.0",
     "prettier": "3.0.0",
     "tsx": "3.12.7",
