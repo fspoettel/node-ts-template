@@ -5,12 +5,12 @@ Template for developing [Node.js](https://nodejs.org) projects with [TypeScript]
 Features:
 
 - support for [ESM modules](https://nodejs.org/api/esm.html) and top-level `await`.
-- [swc](https://swc.rs/) for faster tests and builds.
+- [node:test](https://nodejs.org/api/test.html) for testing.
+- [tsx](https://github.com/remy/nodemon) for development.
+- [swc](https://swc.rs/) for faster builds and `tsconfig.paths` support.
 - [eslint](https://eslint.org) for linting.
-- [jest](https://jestjs.io/) for testing.
 - [prettier](https://prettier.io) for code formatting.
 - [github actions](https://docs.github.com/en/actions) for continuous integration.
-- [tsx](https://github.com/remy/nodemon) for development.
 - pre-configured [Dockerfile](https://docker.com).
 
 ## Install
@@ -24,7 +24,7 @@ npm install
 ```
 npm run dev
 
-# start with debugger exposed @ 127.0.0.1:9229
+# start with debugger exposed
 npm run dev:debug
 ```
 

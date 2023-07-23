@@ -1,5 +1,5 @@
 # use alpine as base image
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 # install locked dependencies via `npm ci`
 FROM base AS deps
