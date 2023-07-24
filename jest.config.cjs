@@ -5,6 +5,7 @@ const fs = require("fs");
 const swcConfig = JSON.parse(fs.readFileSync(`${__dirname}/.swcrc`));
 
 module.exports = {
+  coverageProvider: "v8",
   collectCoverageFrom: ["src/**/*.ts"],
   extensionsToTreatAsEsm: [".ts"],
   moduleNameMapper: {
