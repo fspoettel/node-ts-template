@@ -14,7 +14,7 @@ export function ensureEnv(key: string): string {
 function createConfig() {
   return {
     /** application identifier. used e.g. to scope the logger. */
-    APP_ID: "com.qms-slack-bot",
+    APP_ID: "com.node-ts-template",
     /** (optional) minimum log level. defaults to `info`. */
     LOG_LEVEL: process.env["LOG_LEVEL"] ?? "info",
   };

@@ -1,4 +1,4 @@
-import { main } from "./main.js";
+import { main } from "@/main.js";
 
 describe("main", () => {
   it("does not throw an error", () => {

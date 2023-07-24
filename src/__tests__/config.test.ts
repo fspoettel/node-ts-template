@@ -1,4 +1,4 @@
-import { ensureEnv } from "./config.js";
+import { ensureEnv } from "@/lib/config.js";
 
 describe("config.ensureEnv", () => {
   beforeEach(() => {
