@@ -8,7 +8,7 @@ const config = createConfig();
 
 const logger = createLogger({
   name: config.APP_ID,
-  level: config.LOG_LEVEL
+  level: config.LOG_LEVEL,
 });
 
 // compiles to ESM, so top-level await works.

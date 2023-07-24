@@ -9,8 +9,7 @@ Features:
 - [swc](https://swc.rs/) for faster builds and `tsconfig.paths` support.
 - [eslint](https://eslint.org) for linting.
 - [prettier](https://prettier.io/) + [lint-staged](https://github.com/okonet/lint-staged) hook for code formatting.
-- [node:test](https://nodejs.org/api/test.html) for testing.
-- [c8](https://github.com/bcoe/c8) for coverage.
+- [jest](https://jestjs.io/) for testing.
 - [github actions](https://docs.github.com/en/actions) for continuous integration.
 - pre-configured [Dockerfile](https://docker.com).
 
