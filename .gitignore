@@ -131,3 +131,6 @@ dist
 
 # Generated code & artifacts
 dist
+
+# macos
+.DS_Store
