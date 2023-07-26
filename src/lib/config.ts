@@ -17,6 +17,7 @@ function createConfig() {
     APP_ID: "com.node-ts-template",
     /** (optional) minimum log level. defaults to `info`. */
     LOG_LEVEL: process.env["LOG_LEVEL"] ?? "info",
+    PORT: process.env["PORT"] ?? 3000
   };
 }
 

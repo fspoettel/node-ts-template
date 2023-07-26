@@ -11,11 +11,11 @@ RUN npm ci
 FROM base AS build
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
-COPY . .
-RUN npm run build
-RUN npm prune --omit=dev
+COPY tsconfig.json .swcrc package.json .
+COPY src ./src
+RUN npm run build && npm prune --omit=dev
 
-# build typescript
+# runner
 FROM base AS runner
 
 ENV NODE_ENV production
