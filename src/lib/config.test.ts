@@ -1,4 +1,5 @@
-import { ensureEnv } from "@/lib/config.js";
+import { ensureEnv } from "./config.js";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
 describe("config.ensureEnv", () => {
   beforeEach(() => {

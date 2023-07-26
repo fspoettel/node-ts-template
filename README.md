@@ -5,11 +5,11 @@ Template for developing [Node.js](https://nodejs.org) projects with [TypeScript]
 Features:
 
 - support for [ESM modules](https://nodejs.org/api/esm.html) and top-level `await`.
-- [tsx](https://github.com/esbuild-kit/tsx) for development.
 - [swc](https://swc.rs/) for faster builds and `tsconfig.paths` support.
+- [tsx](https://github.com/esbuild-kit/tsx) for development.
+- [vitest](https://vitest.dev/) for testing.
 - [eslint](https://eslint.org) for linting.
 - [prettier](https://prettier.io/) + [lint-staged](https://github.com/okonet/lint-staged) hook for code formatting.
-- [jest](https://jestjs.io/) for testing.
 - [github actions](https://docs.github.com/en/actions) for continuous integration.
 - pre-configured [Dockerfile](https://docker.com).
 

@@ -17,10 +17,9 @@
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
-    // this has to be mirrored in .swcrc
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*", "jest.env.ts"]
+  "include": ["src/**/*", "./vitest.env.ts"]
 }
