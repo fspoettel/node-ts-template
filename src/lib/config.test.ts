@@ -1,7 +1,7 @@
 import { ensureEnv } from "./config.js";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
-describe("config.ensureEnv", () => {
+describe("ensureEnv()", () => {
   beforeEach(() => {
     process.env["TEST_DOES_EXIST"] = "bar";
   });

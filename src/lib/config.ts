@@ -1,5 +1,5 @@
 /**
- * Checks that an env variable is non-empty, errors otherwise.
+ * Returns an env variable if present, errors otherwise.
  */
 export function ensureEnv(key: string): string {
   const val = process.env[key];
@@ -11,7 +11,8 @@ export function ensureEnv(key: string): string {
   return val;
 }
 
-function createConfig() {
+/* c8 ignore start */
+function getConfig() {
   return {
     /** application identifier. used e.g. to scope the logger. */
     APP_ID: "com.node-ts-template",
@@ -20,7 +21,8 @@ function createConfig() {
     PORT: process.env["PORT"] ?? 3000
   };
 }
+/* c8 ignore stop */
 
-export type Config = ReturnType<typeof createConfig>;
+export type Config = ReturnType<typeof getConfig>;
 
-export default createConfig;
+export default getConfig;

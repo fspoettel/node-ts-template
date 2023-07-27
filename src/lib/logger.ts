@@ -1,9 +1,10 @@
+/* c8 ignore start */
 import { DestinationStream, LoggerOptions, pino } from "pino";
 
 /**
  * Creates an instance of `pino.Logger`.
  */
-function createLogger(
+function makeLogger(
   options: LoggerOptions & { name: string; level: string },
   destinationStream?: DestinationStream,
 ) {
@@ -12,4 +13,5 @@ function createLogger(
 
 export type Logger = pino.Logger;
 
-export default createLogger;
+export default makeLogger;
+/* c8 ignore stop */

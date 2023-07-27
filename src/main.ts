@@ -1,12 +1,12 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import createLogger from "@/lib/logger.js";
-import createConfig from "@/lib/config.js";
+import makeLogger from "@/lib/logger.js";
+import makeConfig from "@/lib/config.js";
 
-const config = createConfig();
+const config = makeConfig();
 
-const logger = createLogger({
+const logger = makeLogger({
   name: config.APP_ID,
   level: config.LOG_LEVEL,
 });

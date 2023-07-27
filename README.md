@@ -4,7 +4,7 @@ Template for developing [Node.js](https://nodejs.org) projects with [TypeScript]
 
 Features:
 
-- support for [ESM modules](https://nodejs.org/api/esm.html) and top-level `await`.
+- support for [ESM](https://nodejs.org/api/esm.html) and top-level `await`.
 - [swc](https://swc.rs/) for faster builds and `tsconfig.paths` support.
 - [tsx](https://github.com/esbuild-kit/tsx) for development.
 - [vitest](https://vitest.dev/) for testing.
