@@ -18,7 +18,7 @@ function getConfig() {
     APP_ID: "com.node-ts-template",
     /** (optional) minimum log level. defaults to `info`. */
     LOG_LEVEL: process.env["LOG_LEVEL"] ?? "info",
-    PORT: process.env["PORT"] ?? 3000
+    PORT: process.env["PORT"] ?? 3000,
   };
 }
 /* c8 ignore stop */
