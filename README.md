@@ -1,10 +1,10 @@
-# node-ts-template
+# 🧰 node-ts-template
 
 Template for developing [Node.js](https://nodejs.org) projects with [TypeScript](https://www.typescriptlang.org).
 
 Features:
 
-- support for [ESM](https://nodejs.org/api/esm.html) and top-level `await`.
+- supports [ESM](https://nodejs.org/api/esm.html) and top-level `await`.
 - [swc](https://swc.rs/) for faster builds and `tsconfig.paths` support.
 - [tsx](https://github.com/esbuild-kit/tsx) for development.
 - [vitest](https://vitest.dev/) for testing.
@@ -12,31 +12,35 @@ Features:
 - [prettier](https://prettier.io/) + [lint-staged](https://github.com/okonet/lint-staged) hook for code formatting.
 - [github actions](https://docs.github.com/en/actions) for continuous integration.
 - pre-configured [Dockerfile](https://docker.com).
+- pre-configured [debugger](https://code.visualstudio.com/docs/editor/debugging) for VS code
 
 ## Install
 
-```
+```sh
 npm install
 ```
 
 ## Develop
 
-```
+```sh
 npm run dev
+```
 
-# start with debugger exposed
+## Debug
+
+```sh
 npm run dev:debug
 ```
 
 ## Check types
 
-```
+```sh
 npm run check
 ```
 
 ## Build
 
-```
+```sh
 npm run build
 ```
 
@@ -72,6 +76,15 @@ npm run lint
 ```
 npm run fmt
 ```
+
+## Path aliases
+
+This template setting up path aliases via `tsconfig.paths`. By default, a `@` alias is configured, pointing to the `src` directory.
+
+If you add new aliases, these have to be mirrored in:
+
+- `.swcrc {jsc.paths}` for the aliases to work in build output.
+- `vitest.config.ts {test.alias}` for the aliases to work in unit tests.
 
 ## Docker
 
