@@ -1,15 +1,14 @@
 # use alpine as base image
 FROM node:20-alpine AS base
+WORKDIR /app
 
 # install locked dependencies via `npm ci`
 FROM base AS deps
-WORKDIR /app
 COPY package.json package-lock.json .
 RUN npm ci
 
 # build typescript with @swc/core. prune devDependencies from node_modules after.
 FROM base AS build
-WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY tsconfig.json .swcrc package.json .
 COPY src ./src
@@ -20,8 +19,6 @@ FROM base AS runner
 
 ENV NODE_ENV production
 ENV PORT 3000
-
-WORKDIR /app
 
 # run as non-root user.
 RUN addgroup --system --gid 1001 nodejs
