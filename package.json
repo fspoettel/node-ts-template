@@ -32,7 +32,7 @@
     "lint-staged": "14.0.1",
     "pino-pretty": "10.2.0",
     "prettier": "3.0.3",
-    "tsx": "3.12.9",
+    "tsx": "3.12.10",
     "typescript": "5.2.2",
     "undici": "5.24.0",
     "vitest": "0.34.4"
