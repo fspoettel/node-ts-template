@@ -12,7 +12,7 @@ Features:
 - [prettier](https://prettier.io/) + [lint-staged](https://github.com/okonet/lint-staged) hook for code formatting.
 - [github actions](https://docs.github.com/en/actions) for continuous integration.
 - pre-configured [Dockerfile](https://docker.com).
-- pre-configured [debugger](https://code.visualstudio.com/docs/editor/debugging) for VS code
+- pre-configured [debugger](https://code.visualstudio.com/docs/editor/debugging) for VS code.
 
 ## Install
 
