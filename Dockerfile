@@ -1,5 +1,5 @@
 # use alpine as base image
-FROM node:20.11.1-alpine AS base
+FROM node:20.12.0-alpine AS base
 WORKDIR /app
 
 # install locked dependencies via `npm ci`
